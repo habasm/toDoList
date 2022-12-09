@@ -1,3 +1,6 @@
-import { camelCase } from 'lodash'
+import './css/style.css';
+import ShowList from './modules/showTask.js';
 
-console.log(camelCase('Hello World'));
+window.addEventListener('load', () => {
+  ShowList();
+});
