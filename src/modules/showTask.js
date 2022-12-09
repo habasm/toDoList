@@ -21,10 +21,15 @@ const renderDisplay = () => {
   allList.innerHTML = '';
   tasksArr.forEach((task, index) => {
     const oneTask = document.createElement('li');
+    const checkedVal = task.completed;
+    let attrscheck = '';
+    if (checkedVal === true) {
+      attrscheck = 'checked';
+    }
     oneTask.classList = 'each-list all-box';
     oneTask.id = index;
     oneTask.innerHTML = `
-      <input data-action="checkbox" class="input-check" type="checkbox"/>
+      <input data-action="checkbox" class="input-check" type="checkbox" ${attrscheck}/>
       <input data-action="edit" type="text" id="input-text" class="input-text" value="${task.description}" />
       <i data-action="delete" class="fa-solid fa-trash list-icon" id="delete-btn"></i>
     `;
