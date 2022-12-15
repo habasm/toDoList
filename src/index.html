@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To Do List</title>
-  <script src="https://kit.fontawesome.com/ad432cd04f.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Project</title>
+    <!-- Fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/27219c429c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <section>
-    <div class="list-box">
-      <div class="box-name all-box">Today's To Do</div>
-      <div class="input-box">
-        <input class="the-input" id="the-input" type="text" placeholder="Add to your List..." required/>
-      </div>
-      <ul class="all-list"></ul>
-      <button class="clear-button">
-        <p class="clear-btn-text">Clear all completed</p>
-      </button>
-    </div>
-  </section>
-  <script src="../dist/main.js"></script>
+    <main>
+        <header>
+            <h1>Today's To Do</h1>
+            <p id="recycle"><i class="fa-solid fa-arrow-rotate-left"></i></p>
+        </header>
+        <div class="task-wrapper">
+            <form action="" method="GET" id="task-form">
+                <div class="underline">
+                    <input type="text" id="task" required placeholder="Add to your list...">
+                    <button type="submit" id="enter-btn" class="btn"><i class="fa-solid fa-arrow-left-long change-color"></i></button>
+                </div>
+            </form>
+            <!-- Task List -->
+            <ul class="nav" id="nav">
+                <!-- adding Dynamicaly li To ul -->
+            </ul>
+            <button id="clear" class="btn">Clear all completed</button>
+        </div>
+    </main>
 </body>
+
 </html>
