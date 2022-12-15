@@ -1,0 +1,35 @@
+import ToDoList from './toDoListFunctionlity.js';
+import { ulElement } from './values.js';
+
+const myList = new ToDoList(ulElement);
+// Check if we item is added to DOM or Not
+const checkLiInDOM = (liQuery) => {
+  if (liQuery.length > 0) {
+    return liQuery;
+  }
+  return -1;
+};
+// =========================================== Adding Item
+// [ DOM MOCK ]
+describe('Adding: ', () => {
+  document.body.innerHTML = `<div class="task-wrapper">
+  <form action="" method="GET" id="task-form">
+    <div class="underline">
+      <input type="text" id="task" required placeholder="Add to your list...">
+      <button type="submit" id="enter-btn" class="btn"><i class="fa-solid fa-arrow-left-long change-color"></i></button>
+    </div>
+  </form>
+  <ul class="nav" id="nav">
+    
+  </ul>
+  <button id="clear" class="btn">Clear all completed</button>
+</div>`;
+
+  test('Item Added to LocalStorage, Array and DOM', () => {
+    expect(myList.addItemToList('Cleaning Car.')).toHaveLength(1);
+    expect(myList.addItemToList('Eating launch.')).toHaveLength(2);
+    expect(myList.addItemToList('Coding with partner.')).toHaveLength(3);
+    expect(checkLiInDOM(document.querySelectorAll('li'))).toHaveLength(3);
+  });
+});
+
