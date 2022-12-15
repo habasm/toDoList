@@ -27,23 +27,9 @@ describe('Adding: ', () => {
 
   test('Item Added to LocalStorage, Array and DOM', () => {
     expect(myList.addItemToList('Cleaning Car.')).toHaveLength(1);
-    expect(myList.addItemToList('Cleaning Car.')).toHaveLength(2);
-    expect(checkLiInDOM(document.querySelectorAll('li'))).toHaveLength(2);
-  });
-});
-
-// ======================================= Removing Item
-describe('Removing:', () => {
-  const toDoList = [];
-  const removeBtn = document.createElement('i');
-  removeBtn.setAttribute('class', 'change-position');
-  removeBtn.classList.add('fa-solid', 'fa-trash-can');
-  test('Item Removed from LocalStorage, Array and DOM', () => {
-    expect(myList.addItemToList('O.')).toHaveLength(3);
-    expect(myList.addItemToList('S.')).toHaveLength(4);
-    expect(myList.addItemToList('H.')).toHaveLength(5);
-    expect(myList.removeItemTest(toDoList, removeBtn, 4, document.getElementById('id4'))).toHaveLength(4);
-    expect(myList.removeItemTest(toDoList, removeBtn, 2, document.getElementById('id2'))).toHaveLength(3);
+    expect(myList.addItemToList('Eating launch.')).toHaveLength(2);
+    expect(myList.addItemToList('Coding with partner.')).toHaveLength(3);
     expect(checkLiInDOM(document.querySelectorAll('li'))).toHaveLength(3);
   });
 });
+
