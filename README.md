@@ -37,7 +37,7 @@
 > CSS,
 > JavaScripts and
 > Webpacks
-
+## Check live: [To-do-list](https://habasm.github.io/toDoList/dist/)
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
@@ -98,9 +98,9 @@ Clone this repository to your desired folder:
 
 👤 **Hassaan Baig**
 
-- GitHub: [@habasm](https://github.com/Hassaanjbaig-code)
-- Twitter: [@habasm](https://twitter.com/habasm)
-- LinkedIn: [Habitamu Asimare](https://www.linkedin.com/in/habasm/)
+- GitHub: [@Hassan](https://github.com/Hassaanjbaig-code)
+- Twitter: [@Hassan](https://twitter.com/habasm)
+- LinkedIn: [Hassan Baig](https://www.linkedin.com/in/habasm/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
