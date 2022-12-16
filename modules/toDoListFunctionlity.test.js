@@ -32,7 +32,7 @@ describe('Adding: ', () => {
     expect(checkLiInDOM(document.querySelectorAll('li'))).toHaveLength(2);
   });
 });
-// ======================================= Removing Item 
+// ======================================= Removing Item
 describe('Removing:', () => {
   const toDoList = [];
   const removeBtn = document.createElement('i');
