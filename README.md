@@ -142,6 +142,6 @@ Feel free to check the [issues page](https://github.com/habasm/todolist/issues).
 
 ## 📝 License <a name="license"></a>
 
-This project is [GNU](LICENSE.md ) licensed.
+This project is [LICENSE.md](https://github.com/habasm/toDoList/blob/testcase1/README.md) ) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
