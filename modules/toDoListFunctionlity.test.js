@@ -40,9 +40,9 @@ describe('Removing:', () => {
   removeBtn.setAttribute('class', 'change-position');
   removeBtn.classList.add('fa-solid', 'fa-trash-can');
   test('Item Removed from LocalStorage, Array and DOM', () => {
-    expect(myList.addItemToList('O.')).toHaveLength(4);
-    expect(myList.addItemToList('S.')).toHaveLength(5);
-    expect(myList.addItemToList('H.')).toHaveLength(6);
+    expect(myList.addItemToList('Drink cofee')).toHaveLength(4);
+    expect(myList.addItemToList('Doing project')).toHaveLength(5);
+    expect(myList.addItemToList('Meet family')).toHaveLength(6);
     expect(myList.removeItemTest(toDoList, removeBtn, 4, document.getElementById('id4'))).toHaveLength(5);
     expect(myList.removeItemTest(toDoList, removeBtn, 2, document.getElementById('id2'))).toHaveLength(4);
     expect(checkLiInDOM(document.querySelectorAll('li'))).toHaveLength(4);
