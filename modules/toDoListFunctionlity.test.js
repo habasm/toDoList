@@ -69,34 +69,3 @@ describe('Update: ', () => {
     expect(myList.editeInputTextTest(pElemen1, 'Hassan', newItem, 0)).toMatch('Hassan'); // Change Habasm to Habasm
   });
 });
-// ======================================= Checkbox Event [True/False]
-describe('Update Complete Status: ', () => {
-  test('Status Updated', () => {
-    const checkboxElement = document.getElementById('index1');
-    const pElement = document.getElementById('text-input-style-1');
-    const pElementValue = pElement.value;
-    const newItem = {
-      description: pElementValue,
-      completed: false,
-      index: 1,
-    };
-    expect(myList.checkBoxStatusEventTest(newItem, checkboxElement, pElement, 1)).toBeTruthy();
-
-    const checkboxElement1 = document.getElementById('index0');
-    const pElement1 = document.getElementById('text-input-style-0');
-    const pElementValue1 = pElement1.value;
-    const newItem1 = {
-      description: pElementValue1,
-      completed: false,
-      index: 0,
-    };
-    expect(myList.checkBoxStatusEventTest(newItem1, checkboxElement1, pElement1, 0)).toBeTruthy();
-    expect(myList.checkBoxStatusEventTest(newItem, checkboxElement, pElement, 1)).toBeFalsy();
-  });
-});
-// =========================================== Clear All Functionality Test Cases.
-describe('Clear All functionality: ', () => {
-  test('items cleared from list.', () => {
-    expect(myList.clearCompletedTasksTest()).toHaveLength(2);
-  });
-});
